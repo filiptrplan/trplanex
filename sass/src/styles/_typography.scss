@@ -1,0 +1,51 @@
+html,
+body {
+    color: $gray-600;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+h3 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.75rem;
+}
+h6 {
+    font-size: 1.5rem;
+}
+small {
+    font-weight: 300;
+}
+a {
+    color: $primary;
+    border-color: $primary;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    line-height: 1em;
+    display: inline-block;
+
+    &:hover{
+        color: $primary-light;
+        border-color: $primary-light;
+    }
+}

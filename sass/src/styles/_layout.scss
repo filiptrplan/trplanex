@@ -1,0 +1,16 @@
+.container {
+    margin: auto;
+    @include media('>=lg') {
+        max-width: 1200px;
+    }
+    @include media('>=md', '<lg') {
+        max-width: 992px;
+    }
+    @include media('>=sm', '<md') {
+        max-width: 700px;
+    }
+    @include media('<sm') {
+        max-width: 100%;
+        margin: 0;
+    }
+}

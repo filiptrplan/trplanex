@@ -1,0 +1,64 @@
+.btn {
+    @include transition-curve;
+    transition-duration: 200ms;
+    margin: 0.25rem;
+    background-color: $primary;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 2px solid $primary;
+    border-radius: 0.75rem;
+
+    &:hover {
+        background-color: white;
+        color: $primary;
+    }
+
+    &:active,
+    &:focus {
+        box-shadow: 0px 0px 0px 5px adjust-color($color: $primary, $alpha: -0.75);
+    }
+
+    &.btn-danger {
+        border: 2px solid $danger;
+        background-color: $danger;
+        &:hover {
+            background-color: white;
+            color: $danger;
+        }
+
+        &:active,
+        &:focus {
+            box-shadow: 0px 0px 0px 5px
+                adjust-color($color: $danger, $alpha: 0.25);
+        }
+    }
+
+    &.btn-secondary {
+        background-color: white;
+        border-color: black;
+        color: black;
+
+        &:hover {
+            background-color: $gray-100;
+        }
+
+        &:active,
+        &:focus {
+            box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
+        }
+        &:active {
+            background-color: $gray-300;
+        }
+    }
+}
+
+.btn,
+.btn.btn-danger {
+    &:active,
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        background-color: $gray-100;
+    }
+}

@@ -1,0 +1,28 @@
+.navbar {
+    width: 100vw;
+    padding: 0 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .name {
+            color: black;
+            font-size: 1.25rem;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        .nav-item {
+            margin: 0 0.75rem;
+        }
+    }
+}
