@@ -1,5 +1,22 @@
 <template>
   <div class="container mx-auto">
+    <nav class="navbar">
+      <div class="logo-container">
+        <div class="logo"><img src="sample_logo.png" alt=""></div>
+        <div class="name">Trplanex</div>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-item is-active">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Pricing</a>
+        </li>
+      </ul>
+    </nav>
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
