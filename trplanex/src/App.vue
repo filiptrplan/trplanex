@@ -14,6 +14,8 @@
       <li>List item 2</li>
       <li>List item 3</li>
     </ul>
+    <button class="btn">Login</button>
+    <button class="btn btn-secondary">Cancel</button>
   </div>
 </template>
 
