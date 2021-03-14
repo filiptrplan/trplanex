@@ -1,6 +1,6 @@
 .navbar {
     width: 100vw;
-    padding: 0 9rem;
+    padding: 1rem 9rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,21 +8,42 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-
+        .logo {
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-right: 0.5rem;
+        }
         .name {
             color: black;
-            font-size: 1.25rem;
+            font-size: 2.5rem;
             vertical-align: middle;
             display: inline-block;
         }
     }
     .nav-links {
+        width: 100%;
         list-style-type: none;
         display: flex;
+        align-items: center;
         flex-direction: row;
-        justify-content: end;
+        justify-content: flex-end;
         .nav-item {
-            margin: 0 0.75rem;
+            margin: 0 3rem;
+            .nav-link {
+                @include transition-curve;
+                transition-duration: 200ms;
+                font-size: 1.25rem;
+                border: none;
+                color: $gray-400;
+                &:hover {
+                    color: black;
+                }
+                &.is-active {
+                    color: black;
+                    border-bottom: 3px solid;
+                    border-color: $primary;
+                }
+            }
         }
     }
 }
