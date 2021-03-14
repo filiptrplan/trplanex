@@ -1,28 +1,3 @@
-@mixin btn-color(
-    $btn-color,
-    $btn-border-color,
-    $text-color,
-    $btn-hover-color,
-    $text-hover-color,
-    $btn-click-color
-) {
-    background-color: $btn-color;
-    border-color: $btn-border-color;
-    color: $text-color;
-    &:hover {
-        color: $text-hover-color;
-        background-color: $btn-hover-color;
-    }
-    &:active {
-        background-color: $btn-click-color;
-    }
-    &:active,
-    &:focus {
-        box-shadow: 0px 0px 0px 5px
-            adjust-color($color: $btn-border-color, $alpha: -0.75);
-    }
-}
-
 .btn {
     @include transition-curve;
     transition-duration: 200ms;
@@ -39,28 +14,6 @@
         white,
         $primary-dark
     );
-
-    &.btn-danger {
-        @include btn-color(
-            $danger,
-            $danger,
-            white,
-            $danger-dark,
-            white,
-            $danger-dark,
-        );
-    }
-
-    &.btn-secondary {
-        @include btn-color(
-            $main-bg-color,
-            $main-bg-contrast,
-            $main-bg-contrast,
-            $btn-secondary-hover,
-            $main-bg-contrast,
-            $btn-secondary-click
-        );
-    }
 
     &:active,
     &:focus {

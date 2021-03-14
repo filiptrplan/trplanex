@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<nav class="navbar">
-      <div class="logo-container">
-        <div class="logo"><img src="sample_logo.png" alt=""></div>
-        <h1 class="name">Trplanex</h1>
-      </div>
-      <ul class="nav-links">
-        <li class="nav-item is-active">
-          <a href="#" class="nav-link is-active">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
-        </li>
-        <li class="nav-item is-dropdown">
-          <a href="#" class="nav-link">Pricing</a>
-          <img src="arrow_drop_down-24px.svg" class="dropdown-icon"></img>
-          <div class="dropdown">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo"><img src="sample_logo.png" alt="" /></div>
+                <h1 class="name">Trplanex</h1>
+            </div>
             <ul class="nav-links">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Free plan</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Pro plan</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Custom Pricing</a>
-              </li>
+                <li class="nav-item is-active">
+                    <a href="#" class="nav-link is-active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item is-dropdown">
+                    <a href="#" class="nav-link">Pricing</a>
+                    <img src="arrow_drop_down-24px.svg" class="dropdown-icon" />
+                    <div class="dropdown">
+                        <ul class="nav-links">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Free plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Pro plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Custom Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  <div class="container mx-auto">
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-    <p>Paragraph</p>
-    <a href="#">Links</a><br />
-    <small>Small</small>
-    <ul>
-      <li>List item 1</li>
-      <li>List item 2</li>
-      <li>List item 3</li>
-    </ul>
-    <button class="btn">Login</button>
-    <button class="btn btn-secondary">Cancel</button>
-  </div>
-<script src="./bundle.js"></script>
-</body>
+        </nav>
+        <div class="container mx-auto">
+            <div class="alert is-danger">
+                This is a sample alert! This is a sample alert! This is a sample alert! This is a sample alert! This is a sample alert!
+                <button class="alert-close">
+                    <span class="material-icons"> clear </span>
+                </button>
+            </div>
+            <div class="alert is-secondary">
+                This is a sample alert!
+                <button class="alert-close">
+                    <span class="material-icons"> clear </span>
+                </button>
+            </div>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <p>Paragraph</p>
+            <a href="#">Links</a><br />
+            <small>Small</small>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+            <button class="btn">Login</button>
+            <button class="btn is-secondary">Cancel</button>
+        </div>
+        <script src="./bundle.js"></script>
+    </body>
 </html>
