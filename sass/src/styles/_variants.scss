@@ -41,6 +41,7 @@
          .alert-close {
             background-color: $main-bg-color;
             border: 2px solid;
+            transform: translate(1px, -2px);
             .material-icons {
                 font-size: calc(1.25rem - 2px);
             }
