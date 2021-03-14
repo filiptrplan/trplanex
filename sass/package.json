@@ -6,7 +6,7 @@
   "license": "none",
   "private": true,
   "scripts": {
-    "start": "yarn webpack-dev-server --config webpack.config.js --mode development --env development --hot",
+    "start": "yarn webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

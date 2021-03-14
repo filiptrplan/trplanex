@@ -1,6 +1,9 @@
 .container {
     margin: auto;
-    @include media('>=lg') {
+    @include media('>=xl') {
+        max-width: 1400px;
+    }
+    @include media('>=lg', '<xl') {
         max-width: 1200px;
     }
     @include media('>=md', '<lg') {

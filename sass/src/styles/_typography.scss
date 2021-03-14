@@ -1,6 +1,6 @@
 html,
 body {
-    color: $gray-600;
+    color: $text-color;
     font-family: 'Rubik', sans-serif;
     font-size: 1.1em;
 }
@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: black;
+    color: $emphasis-text-color;
 }
 h1 {
     font-size: 3rem;
