@@ -1,64 +1,69 @@
-.btn {
-    @include transition-curve;
-    transition-duration: 200ms;
-    margin: 0.25rem;
-    background-color: $primary;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: 2px solid $primary;
-    border-radius: 0.75rem;
-
+@mixin btn-color(
+    $btn-color,
+    $btn-border-color,
+    $text-color,
+    $btn-hover-color,
+    $text-hover-color,
+    $btn-click-color
+) {
+    background-color: $btn-color;
+    border-color: $btn-border-color;
+    color: $text-color;
     &:hover {
-        background-color: white;
-        color: $primary;
+        color: $text-hover-color;
+        background-color: $btn-hover-color;
     }
-
+    &:active {
+        background-color: $btn-click-color;
+    }
     &:active,
     &:focus {
-        box-shadow: 0px 0px 0px 5px adjust-color($color: $primary, $alpha: -0.75);
-    }
-
-    &.btn-danger {
-        border: 2px solid $danger;
-        background-color: $danger;
-        &:hover {
-            background-color: white;
-            color: $danger;
-        }
-
-        &:active,
-        &:focus {
-            box-shadow: 0px 0px 0px 5px
-                adjust-color($color: $danger, $alpha: 0.25);
-        }
-    }
-
-    &.btn-secondary {
-        background-color: white;
-        border-color: black;
-        color: black;
-
-        &:hover {
-            background-color: $gray-100;
-        }
-
-        &:active,
-        &:focus {
-            box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.25);
-        }
-        &:active {
-            background-color: $gray-300;
-        }
+        box-shadow: 0px 0px 0px 5px
+            adjust-color($color: $btn-border-color, $alpha: -0.75);
     }
 }
 
-.btn,
-.btn.btn-danger {
+.btn {
+    @include transition-curve;
+    transition-duration: 200ms;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 2px solid;
+    border-radius: 0.75rem;
+
+    @include btn-color(
+        $primary,
+        $primary,
+        white,
+        $primary-dark,
+        white,
+        $primary-dark
+    );
+
+    &.btn-danger {
+        @include btn-color(
+            $danger,
+            $danger,
+            white,
+            $danger-dark,
+            white,
+            $danger-dark,
+        );
+    }
+
+    &.btn-secondary {
+        @include btn-color(
+            $main-bg-color,
+            $main-bg-contrast,
+            $main-bg-contrast,
+            $btn-secondary-hover,
+            $main-bg-contrast,
+            $btn-secondary-click
+        );
+    }
+
     &:active,
     &:focus {
         outline: none;
-    }
-    &:active {
-        background-color: $gray-100;
     }
 }
