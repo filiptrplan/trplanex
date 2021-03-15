@@ -1,0 +1,17 @@
+:root {
+  --primary: #4a5bff;
+  --primary-light: #C084FC;
+  --primary-dark: #9333EA;
+  --danger: #EF4444;
+  --danger-light: #F87171;
+  --danger-dark: #DC2626;
+  --text-color: #52525B;
+  --emphasis-text-color: black;
+  --nav-link-color: #A1A1AA;
+  --nav-link-hover: black;
+  --main-bg-color: white;
+  --main-bg-dark: #F4F4F5;
+  --main-bg-contrast: black;
+  --btn-secondary-hover: #F4F4F5;
+  --btn-secondary-click: #D4D4D8; }
+

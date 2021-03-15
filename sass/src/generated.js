@@ -1,0 +1,1 @@
+import "./styles/generated/app-generated.scss";

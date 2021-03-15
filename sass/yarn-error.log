@@ -1,8 +1,8 @@
 Arguments: 
-  /home/filip/.nvm/versions/node/v12.18.2/bin/node /home/filip/.nvm/versions/node/v12.18.2/bin/yarn add -D autoprefixer
+  /home/filip/.nvm/versions/node/v12.18.2/bin/node /home/filip/.nvm/versions/node/v12.18.2/bin/yarn add -D prebuild-webpack-pluginž
 
 PATH: 
-  /home/filip/.local/bin:/home/filip/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/bin:/home/filip/.nvm/versions/node/v12.18.2/bin:/home/filip/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/d/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/d/Program Files/Razer/ChromaBroadcast/bin:/mnt/d/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/d/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/flutter/sdk/bin:/mnt/d/Program Files (x86)/QuickTime/QTSystem/:/mnt/d/Program Files/CMake/bin:/mnt/d/Program Files/Common Files/Autodesk Shared/:/mnt/d/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/d/Program Files/Calibre2/:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python37-32/Scripts/:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python37-32/:/mnt/d/Program Files/Anaconda:/mnt/d/Program Files/Anaconda/Library/mingw-w64/bin:/mnt/d/Program Files/Anaconda/Library/usr/bin:/mnt/d/Program Files/Anaconda/Library/bin:/mnt/d/Program Files/Anaconda/Scripts:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/Filip/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Filip/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/Filip/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Filip/AppData/Roaming/npm:/mnt/d/Filip/Documents/Software/ffmpeg/bin:/mnt/d/Program Files/dotnet/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn/:/mnt/d/Program Files/Azure Data Studio/bin:/mnt/d/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/Filip/.dotnet/tools
+  /home/filip/.local/bin:/home/filip/.vscode-server/bin/fd6f3bce6709b121a895d042d343d71f317d74e7/bin:/home/filip/.nvm/versions/node/v12.18.2/bin:/home/filip/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/d/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/d/Program Files/Razer/ChromaBroadcast/bin:/mnt/d/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/php:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/d/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/d/Program Files/Git/cmd:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/d/flutter/sdk/bin:/mnt/d/Program Files (x86)/QuickTime/QTSystem/:/mnt/d/Program Files/CMake/bin:/mnt/d/Program Files/Common Files/Autodesk Shared/:/mnt/d/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/d/Program Files/Calibre2/:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python37-32/Scripts/:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python37-32/:/mnt/d/Program Files/Anaconda:/mnt/d/Program Files/Anaconda/Library/mingw-w64/bin:/mnt/d/Program Files/Anaconda/Library/usr/bin:/mnt/d/Program Files/Anaconda/Library/bin:/mnt/d/Program Files/Anaconda/Scripts:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/Filip/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Filip/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/Filip/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Filip/AppData/Roaming/npm:/mnt/d/Filip/Documents/Software/ffmpeg/bin:/mnt/d/Program Files/dotnet/:/mnt/c/WINDOWS/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn/:/mnt/d/Program Files/Azure Data Studio/bin:/mnt/d/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python37-32/Scripts/:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python37-32/:/mnt/d/Program Files/Anaconda:/mnt/d/Program Files/Anaconda/Library/mingw-w64/bin:/mnt/d/Program Files/Anaconda/Library/usr/bin:/mnt/d/Program Files/Anaconda/Library/bin:/mnt/d/Program Files/Anaconda/Scripts:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/Filip/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Users/Filip/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Filip/AppData/Roaming/Composer/vendor/bin:/mnt/c/Users/Filip/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Filip/AppData/Roaming/npm:/mnt/d/Filip/Documents/Software/ffmpeg/bin:/mnt/d/flutter/sdk/bin:/mnt/c/Users/Filip/.dotnet/tools:/mnt/d/Program Files/Azure Data Studio/bin
 
 Yarn version: 
   1.22.10
@@ -14,12 +14,14 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/filip/projects/trplanex/sass/package.json: Unexpected token } in JSON at position 261
-      at JSON.parse (<anonymous>)
-      at /home/filip/.nvm/versions/node/v12.18.2/lib/node_modules/yarn/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/home/filip/.nvm/versions/node/v12.18.2/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /home/filip/.nvm/versions/node/v12.18.2/lib/node_modules/yarn/lib/cli.js:321:13
+  TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
+      at new ClientRequest (_http_client.js:148:13)
+      at Object.request (https.js:314:10)
+      at Request.module.exports.Request.start (/home/filip/.nvm/versions/node/v12.18.2/lib/node_modules/yarn/lib/cli.js:141224:32)
+      at Request.module.exports.Request.end (/home/filip/.nvm/versions/node/v12.18.2/lib/node_modules/yarn/lib/cli.js:141983:10)
+      at end (/home/filip/.nvm/versions/node/v12.18.2/lib/node_modules/yarn/lib/cli.js:141037:14)
+      at Immediate._onImmediate (/home/filip/.nvm/versions/node/v12.18.2/lib/node_modules/yarn/lib/cli.js:141051:7)
+      at processImmediate (internal/timers.js:456:21)
 
 npm manifest: 
   {
@@ -30,16 +32,19 @@ npm manifest:
     "license": "none",
     "private": true,
     "scripts": {
-      "start": "webpack serve --mode development",
-      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "yarn webpack serve",
+      "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
       "@babel/core": "^7.13.10",
       "@babel/preset-env": "^7.13.10",
+      "autoprefixer": "^10.2.5",
       "babel-loader": "^8.2.2",
       "css-loader": "^5.1.2",
+      "include-media": "^1.4.9",
       "mini-css-extract-plugin": "^1.3.9",
       "node-sass": "^5.0.0",
+      "postcss": "^8.2.8",
       "postcss-loader": "^5.2.0",
       "postcss-preset-env": "^6.7.0",
       "sass-loader": "^11.0.1",
@@ -1289,6 +1294,18 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
     integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
   
+  autoprefixer@^10.2.5:
+    version "10.2.5"
+    resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.2.5.tgz#096a0337dbc96c0873526d7fef5de4428d05382d"
+    integrity sha512-7H4AJZXvSsn62SqZyJCP+1AWwOuoYpUfK6ot9vm0e87XD6mT8lDywc9D9OTJPMULyGcvmIxzTAMeG2Cc+YX+fA==
+    dependencies:
+      browserslist "^4.16.3"
+      caniuse-lite "^1.0.30001196"
+      colorette "^1.2.2"
+      fraction.js "^4.0.13"
+      normalize-range "^0.1.2"
+      postcss-value-parser "^4.1.0"
+  
   autoprefixer@^9.6.1:
     version "9.8.6"
     resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.8.6.tgz#3b73594ca1bf9266320c5acf1588d74dea74210f"
@@ -1534,7 +1551,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
     integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
   
-  caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001181:
+  caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001181, caniuse-lite@^1.0.30001196:
     version "1.0.30001199"
     resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001199.tgz#062afccaad21023e2e647d767bac4274b8b8fd7f"
     integrity sha512-ifbK2eChUCFUwGhlEzIoVwzFt1+iriSjyKKFYNfv6hN34483wyWpLLavYQXhnR036LhkdUYaSDpHg1El++VgHQ==
@@ -2388,6 +2405,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/forwarded/-/forwarded-0.1.2.tgz#98c23dab1175657b8c0573e8ceccd91b0ff18c84"
     integrity sha1-mMI9qxF1ZXuMBXPozszZGw/xjIQ=
   
+  fraction.js@^4.0.13:
+    version "4.0.13"
+    resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.0.13.tgz#3c1c315fa16b35c85fffa95725a36fa729c69dfe"
+    integrity sha512-E1fz2Xs9ltlUp+qbiyx9wmt2n9dRzPsS11Jtdb8D2o+cC7wr9xkkKsVKJuBX0ST+LVS+LhLO+SbLJNtfWcJvXA==
+  
   fragment-cache@^0.2.1:
     version "0.2.1"
     resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -2762,6 +2784,11 @@ Lockfile:
     dependencies:
       pkg-dir "^4.2.0"
       resolve-cwd "^3.0.0"
+  
+  include-media@^1.4.9:
+    version "1.4.9"
+    resolved "https://registry.yarnpkg.com/include-media/-/include-media-1.4.9.tgz#d0020b7be3eb2d54868a20943595ce380e0bc43b"
+    integrity sha1-0AILe+PrLVSGiiCUNZXOOA4LxDs=
   
   indent-string@^2.1.0:
     version "2.1.0"

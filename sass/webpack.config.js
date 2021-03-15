@@ -1,8 +1,17 @@
 const path = require("path");
+const HookShellScriptPlugin = require("hook-shell-script-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: "development",
-    entry: path.resolve(__dirname, "./src/index.js"),
+    entry: {
+        main: "./src/index.js",
+        generated: "./src/generated.js",
+        light: "./src/theme-light.js", 
+        dark: "./src/theme-dark.js" },
+    resolve: {
+        extensions: ["*", ".js"],
+    },
     module: {
         rules: [
             {
@@ -10,17 +19,10 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ["babel-loader"],
             },
-        ],
-    },
-    resolve: {
-        extensions: ["*", ".js"],
-    },
-    module: {
-        rules: [
             {
                 test: /\.(scss)$/,
                 use: [
-                    "style-loader",
+                    MiniCssExtractPlugin.loader,
                     "css-loader",
                     "postcss-loader",
                     "sass-loader",
@@ -28,9 +30,17 @@ module.exports = {
             },
         ],
     },
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+        }),
+        new HookShellScriptPlugin({
+            beforeCompile: ["node compile-themes.js"],
+        }),
+    ],
     output: {
         path: path.resolve(__dirname, "./dist"),
-        filename: "bundle.js",
+        filename: "[name].js",
     },
     devServer: {
         contentBase: path.resolve(__dirname, "./dist"),
