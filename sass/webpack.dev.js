@@ -6,9 +6,10 @@ module.exports = {
     mode: "development",
     entry: {
         main: "./src/index.js",
-        generated: "./src/generated.js",
-        light: "./src/theme-light.js", 
-        dark: "./src/theme-dark.js" },
+        //generated: "./src/generated.js",
+        //light: "./src/theme-light.js", 
+        //dark: "./src/theme-dark.js"
+    },
     resolve: {
         extensions: ["*", ".js"],
     },
@@ -34,9 +35,6 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css",
         }),
-        new HookShellScriptPlugin({
-            beforeRun: ["node compile-themes.js"],
-        }),
     ],
     output: {
         path: path.resolve(__dirname, "./dist"),
@@ -49,4 +47,4 @@ module.exports = {
         poll: true,
         aggregateTimeout: 300,
     },
-};
+}
