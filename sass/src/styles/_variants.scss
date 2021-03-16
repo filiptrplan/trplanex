@@ -1,5 +1,10 @@
 .is-primary {
     &.btn {
+    }
+}
+
+.btn {
+    &.is-primary {
         @include btn-color(
             $btn-color: $primary,
             $btn-border-color: $primary,
@@ -10,10 +15,8 @@
             $btn-click-color: $primary-dark
         );
     }
-}
 
-.is-danger {
-    &.btn {
+    &.is-danger {
         @include btn-color(
             $btn-color: $danger,
             $btn-border-color: $danger,
@@ -24,20 +27,8 @@
             $btn-click-color: $danger-dark
         );
     }
-    &.alert {
-        background-color: $danger-light;
-        color: white;
-        .alert-close {
-            background-color: $danger;
-            &:hover {
-                background-color: $danger-dark;
-            }
-        }
-    }
-}
 
-.is-secondary {
-    &.btn {
+    &.is-secondary {
         @include btn-color(
             $btn-color: $main-bg-color,
             $btn-border-color: $main-bg-contrast,
@@ -48,7 +39,21 @@
             $btn-click-color: $main-bg-dark
         );
     }
-    &.alert {
+}
+
+.alert {
+    &.is-danger {
+        background-color: $danger-light;
+        color: white;
+        .alert-close {
+            background-color: $danger;
+            &:hover {
+                background-color: $danger-dark;
+            }
+        }
+    }
+
+    &.is-secondary {
         background-color: $main-bg-color;
         color: $main-bg-contrast;
         border-color: $main-bg-contrast;
