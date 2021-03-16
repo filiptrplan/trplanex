@@ -7,5 +7,5 @@ node_modules/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-src/styles/generated/
-src/styles/themes/*-var.scss
+src/styles/generated
+src/styles/themes/*-vars.scss
