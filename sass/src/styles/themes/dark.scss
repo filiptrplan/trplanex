@@ -1,5 +1,5 @@
 @import "_colors";
-$primary: #4a5bff;
+$primary: $purple-500;
 $primary-light: $purple-400;
 $primary-dark: $purple-600;
 $danger: $red-500;
@@ -11,7 +11,7 @@ $emphasis-text-color: black;
 $nav-link-color: $gray-400;
 $nav-link-hover: black;
 
-$main-bg-color: white;
+$main-bg-color: $gray-900;
 $main-bg-dark: $gray-100;
 $main-bg-contrast: black;
 

@@ -1,6 +1,4 @@
 const path = require("path");
-const HookShellScriptPlugin = require("hook-shell-script-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: "development",
@@ -23,7 +21,7 @@ module.exports = {
             {
                 test: /\.(scss)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    "style-loader",
                     "css-loader",
                     "postcss-loader",
                     "sass-loader",
