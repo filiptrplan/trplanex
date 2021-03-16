@@ -29,11 +29,6 @@ module.exports = {
             },
         ],
     },
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-        }),
-    ],
     output: {
         path: path.resolve(__dirname, "./dist"),
         filename: "[name].js",
