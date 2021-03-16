@@ -16,7 +16,7 @@ $nav-link-hover: white;
 
 // The main background colors
 $main-bg-color: $gray-800;
-$main-bg-dark: $gray-700;
+$main-bg-dark: lighten($main-bg-color, 5%);
 $main-bg-contrast: $gray-100;
 
 // Colors for specific components
