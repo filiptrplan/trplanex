@@ -19,6 +19,10 @@ $main-bg-color: $gray-800;
 $main-bg-dark: lighten($main-bg-color, 5%);
 $main-bg-contrast: $gray-100;
 
-// Colors for specific components
-$btn-secondary-hover: $gray-700;
-$btn-secondary-click: $gray-600;
+// Colors for specific components -- generally try to keep them on the default values for visual cohesion
+$btn-secondary-hover: $main-bg-dark;
+$btn-secondary-click: $main-bg-dark;
+
+$dropdown-bg-color: lighten($main-bg-color, 2%);
+
+$input-text-bg: $main-bg-dark;

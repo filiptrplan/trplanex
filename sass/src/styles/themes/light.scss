@@ -16,9 +16,14 @@ $nav-link-hover: black;
 
 // The main background colors
 $main-bg-color: white;
-$main-bg-dark: $gray-100;
+$main-bg-dark: rgb(253, 253, 253);
 $main-bg-contrast: black;
 
-// Colors for specific components
+// Colors for specific components -- generally try to keep them on the default values for visual cohesion
 $btn-secondary-hover: $gray-100;
-$btn-secondary-click: $gray-300;
+$btn-secondary-click: $gray-200;
+
+$dropdown-bg-color: $main-bg-color;
+
+$input-text-bg: $main-bg-color;
+

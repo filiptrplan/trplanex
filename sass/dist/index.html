@@ -25,7 +25,9 @@
                 </li>
                 <li class="nav-item is-dropdown">
                     <a href="#" class="nav-link">Pricing</a>
-                    <span class="material-icons dropdown-icon"> arrow_drop_down </span>
+                    <span class="material-icons dropdown-icon">
+                        arrow_drop_down
+                    </span>
                     <div class="dropdown">
                         <ul class="nav-links">
                             <li class="nav-item">
@@ -44,7 +46,8 @@
         </nav>
         <div class="container mx-auto">
             <div class="alert is-danger">
-                This is a sample alert! This is a sample alert! This is a sample alert! This is a sample alert! This is a sample alert!
+                This is a sample alert! This is a sample alert! This is a sample
+                alert! This is a sample alert! This is a sample alert!
                 <button class="alert-close">
                     <span class="material-icons"> clear </span>
                 </button>
@@ -71,6 +74,39 @@
             </ul>
             <button class="btn is-primary">Login</button>
             <button class="btn is-secondary">Cancel</button>
+            <br />
+            <label for="text">Username</label><br />
+            <input
+                placeholder="Username"
+                class="text-input"
+                id="text"
+                name="text"
+                type="text"
+            />
+            <br />
+            <div class="checkbox-container">
+                <span class="checkbox-input">
+                    <input type="checkbox" name="checked"/>
+                    <span class="checkbox-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 46 46"
+                            aria-hidden="true"
+                            focusable="false"
+                        >
+                            <polyline
+                                class="path"
+                                fill="none"
+                                stroke-width="10"
+                                points="41 5 18 36 5 22"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+                </span>
+                <label class="checkbox-label">Checkbox - Checked</label>
+            </div>
         </div>
         <script src="./main.js"></script>
     </body>

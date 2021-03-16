@@ -28,10 +28,10 @@
             $btn-color: $main-bg-color,
             $btn-border-color: $main-bg-contrast,
             $btn-text-color: $main-bg-contrast,
-            $btn-hover-color: $main-bg-dark,
+            $btn-hover-color: $btn-secondary-hover,
             $text-hover-color: $main-bg-contrast,
             $btn-border-hover-color: $main-bg-contrast,
-            $btn-click-color: $main-bg-dark
+            $btn-click-color: $btn-secondary-hover,
         );
     }
 }
