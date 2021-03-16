@@ -6,15 +6,6 @@
     border: 2px solid;
     border-radius: 0.75rem;
 
-    @include btn-color(
-        $primary,
-        $primary,
-        white,
-        $primary-dark,
-        white,
-        $primary-dark
-    );
-
     &:active,
     &:focus {
         outline: none;

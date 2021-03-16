@@ -8,6 +8,7 @@
     $btn-text-color,
     $btn-hover-color,
     $text-hover-color,
+    $btn-border-hover-color,
     $btn-click-color
 ) {
     background-color: $btn-color;
@@ -16,6 +17,7 @@
     &:hover {
         color: $text-hover-color;
         background-color: $btn-hover-color;
+        border-color: $btn-border-hover-color;
     }
     &:active {
         background-color: $btn-click-color;

@@ -1,12 +1,27 @@
+.is-primary {
+    &.btn {
+        @include btn-color(
+            $btn-color: $primary,
+            $btn-border-color: $primary,
+            $btn-text-color: white,
+            $btn-hover-color: $primary-dark,
+            $text-hover-color: white,
+            $btn-border-hover-color: $primary-dark,
+            $btn-click-color: $primary-dark
+        );
+    }
+}
+
 .is-danger {
     &.btn {
-                @include btn-color(
-            $danger,
-            $danger,
-            white,
-            $danger-dark,
-            white,
-            $danger-dark,
+        @include btn-color(
+            $btn-color: $danger,
+            $btn-border-color: $danger,
+            $btn-text-color: white,
+            $btn-hover-color: $danger-dark,
+            $text-hover-color: white,
+            $btn-border-hover-color: $danger-dark,
+            $btn-click-color: $danger-dark
         );
     }
     &.alert {
@@ -24,12 +39,13 @@
 .is-secondary {
     &.btn {
         @include btn-color(
-            $main-bg-color,
-            $main-bg-contrast,
-            $main-bg-contrast,
-            $btn-secondary-hover,
-            $main-bg-contrast,
-            $btn-secondary-click
+            $btn-color: $main-bg-color,
+            $btn-border-color: $main-bg-contrast,
+            $btn-text-color: $main-bg-contrast,
+            $btn-hover-color: $main-bg-dark,
+            $text-hover-color: $main-bg-contrast,
+            $btn-border-hover-color: $main-bg-contrast,
+            $btn-click-color: $main-bg-dark
         );
     }
     &.alert {
@@ -38,7 +54,7 @@
         border-color: $main-bg-contrast;
         border: 2px solid;
         padding: calc(1rem - 2px) calc(1.25rem - 2px);
-         .alert-close {
+        .alert-close {
             background-color: $main-bg-color;
             border: 2px solid;
             transform: translate(1px, -2px);
