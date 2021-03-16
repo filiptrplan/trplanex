@@ -72,9 +72,12 @@ label {
                 stroke: white;
                 stroke-dasharray: 200;
                 stroke-dashoffset: 200;
-                transform: translate(0px, 2px);
+                transform: scale(0.95) translate(1px, 3px);
             }
         }
+    }
+    .checkbox-label {
+        margin-top: 2px;
     }
 }
 
