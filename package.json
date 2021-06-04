@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Filip Trplan",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/filiptrplan/trplanex"
+  },
   "private": false,
   "scripts": {
     "start": "yarn webpack serve --config webpack.dev.js",
