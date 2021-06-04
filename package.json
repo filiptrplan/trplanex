@@ -1,10 +1,10 @@
 {
-  "name": "traplnex",
+  "name": "trplanex",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Filip Trplan",
-  "license": "none",
-  "private": true,
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "start": "yarn webpack serve --config webpack.dev.js",
     "build": "yarn webpack --config webpack.config.js",

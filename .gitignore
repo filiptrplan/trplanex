@@ -14,3 +14,4 @@ dist/dark.js
 dist/light.js
 dist/main.js
 dist/generated.js
+yarn-error.log
