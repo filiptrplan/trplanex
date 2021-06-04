@@ -9,3 +9,8 @@ node_modules/
 !.yarn/versions
 src/styles/generated
 src/styles/themes/*-vars.scss
+dist/main.css
+dist/dark.js
+dist/light.js
+dist/main.js
+dist/generated.js
