@@ -10,6 +10,11 @@
     "build": "yarn webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "src/",
+    "dist/",
+    "."
+  ],
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
