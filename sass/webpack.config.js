@@ -42,11 +42,4 @@ module.exports = {
         path: path.resolve(__dirname, "./dist"),
         filename: "[name].js",
     },
-    devServer: {
-        contentBase: path.resolve(__dirname, "./dist"),
-    },
-    watchOptions: {
-        poll: true,
-        aggregateTimeout: 300,
-    },
 };

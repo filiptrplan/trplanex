@@ -10,8 +10,10 @@
   --nav-link-color: #A1A1AA;
   --nav-link-hover: black;
   --main-bg-color: white;
-  --main-bg-dark: #F4F4F5;
+  --main-bg-dark: rgb(253, 253, 253);
   --main-bg-contrast: black;
   --btn-secondary-hover: #F4F4F5;
-  --btn-secondary-click: #D4D4D8; }
+  --btn-secondary-click: #E4E4E7;
+  --dropdown-bg-color: var(--main-bg-color);
+  --input-text-bg: var(--main-bg-color); }
 

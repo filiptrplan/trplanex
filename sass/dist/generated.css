@@ -543,19 +543,82 @@ a {
   color: white;
   padding: 0.5rem 1rem;
   border: 2px solid;
-  border-radius: 0.75rem;
-  background-color: var(--primary);
-  border-color: var(--primary);
-  color: white; }
-  .btn:hover {
-    color: white;
-    background-color: var(--primary-dark); }
-  .btn:active {
-    background-color: var(--primary-dark); }
-  .btn:active, .btn:focus {
-    box-shadow: 0px 0px 0px 5px rgba(var(--primary), 0.25); }
+  border-radius: 0.75rem; }
   .btn:active, .btn:focus {
     outline: none; }
+
+label {
+  color: var(--emphasis-text-color); }
+
+.text-input {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  border: 2px solid;
+  border-color: rgba(var(--main-bg-contrast), 0.25);
+  background-color: var(--input-text-bg);
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem; }
+  .text-input:active, .text-input:focus {
+    outline: none; }
+  .text-input:focus {
+    border-color: var(--main-bg-contrast); }
+
+.checkbox-container {
+  display: grid;
+  grid-template-columns: -webkit-min-content auto;
+  grid-template-columns: min-content auto;
+  vertical-align: middle;
+  align-items: center;
+  grid-gap: 0.5em;
+  color: var(--emphasis-text-color); }
+  .checkbox-container .checkbox-input {
+    display: grid;
+    width: 1em;
+    height: 1em;
+    grid-template-areas: "checkbox"; }
+    .checkbox-container .checkbox-input > * {
+      grid-area: checkbox; }
+    .checkbox-container .checkbox-input input {
+      opacity: 0;
+      width: 1em;
+      height: 1em; }
+    .checkbox-container .checkbox-input input:checked + .checkbox-icon svg .path {
+      -webkit-animation: check 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+              animation: check 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+    .checkbox-container .checkbox-input input:not(:checked) + .checkbox-icon svg .path {
+      stroke-dashoffset: 0;
+      -webkit-animation: uncheck 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+              animation: uncheck 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+    .checkbox-container .checkbox-input .checkbox-icon {
+      display: inline-grid;
+      width: 1.05em;
+      height: 1.05em;
+      border-radius: 0.25em;
+      border: 0.1em solid var(--primary);
+      background-color: var(--primary); }
+      .checkbox-container .checkbox-input .checkbox-icon svg .path {
+        stroke: white;
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        transform: scale(0.95) translate(1px, 3px); }
+  .checkbox-container .checkbox-label {
+    margin-top: 2px; }
+
+@-webkit-keyframes check {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes check {
+  to {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes uncheck {
+  to {
+    stroke-dashoffset: 200; } }
+
+@keyframes uncheck {
+  to {
+    stroke-dashoffset: 200; } }
 
 .navbar {
   width: 100vw;
@@ -629,7 +692,7 @@ a {
       .navbar .nav-item.is-dropdown .dropdown.show {
         display: flex; }
       .navbar .nav-item.is-dropdown .dropdown .nav-links {
-        background-color: var(--main-bg-color);
+        background-color: var(--dropdown-bg-color);
         width: auto;
         padding: 0.75rem 0.5rem;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
@@ -663,50 +726,65 @@ a {
     .alert .alert-close:active, .alert .alert-close:focus {
       outline: none; }
 
-.is-danger.btn {
+.btn.is-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white; }
+  .btn.is-primary:hover {
+    color: white;
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark); }
+  .btn.is-primary:active {
+    background-color: var(--primary-dark); }
+  .btn.is-primary:active, .btn.is-primary:focus {
+    box-shadow: 0px 0px 0px 5px rgba(var(--primary), 0.25); }
+
+.btn.is-danger {
   background-color: var(--danger);
   border-color: var(--danger);
   color: white; }
-  .is-danger.btn:hover {
+  .btn.is-danger:hover {
     color: white;
+    background-color: var(--danger-dark);
+    border-color: var(--danger-dark); }
+  .btn.is-danger:active {
     background-color: var(--danger-dark); }
-  .is-danger.btn:active {
-    background-color: var(--danger-dark); }
-  .is-danger.btn:active, .is-danger.btn:focus {
+  .btn.is-danger:active, .btn.is-danger:focus {
     box-shadow: 0px 0px 0px 5px rgba(var(--danger), 0.25); }
 
-.is-danger.alert {
-  background-color: var(--danger-light);
-  color: white; }
-  .is-danger.alert .alert-close {
-    background-color: var(--danger); }
-    .is-danger.alert .alert-close:hover {
-      background-color: var(--danger-dark); }
-
-.is-secondary.btn {
+.btn.is-secondary {
   background-color: var(--main-bg-color);
   border-color: var(--main-bg-contrast);
   color: var(--main-bg-contrast); }
-  .is-secondary.btn:hover {
+  .btn.is-secondary:hover {
     color: var(--main-bg-contrast);
+    background-color: var(--btn-secondary-hover);
+    border-color: var(--main-bg-contrast); }
+  .btn.is-secondary:active {
     background-color: var(--btn-secondary-hover); }
-  .is-secondary.btn:active {
-    background-color: var(--btn-secondary-click); }
-  .is-secondary.btn:active, .is-secondary.btn:focus {
+  .btn.is-secondary:active, .btn.is-secondary:focus {
     box-shadow: 0px 0px 0px 5px rgba(var(--main-bg-contrast), 0.25); }
 
-.is-secondary.alert {
-  background-color: var(--main-bg-color);
+.alert.is-danger {
+  background-color: var(--danger-light);
+  color: white; }
+  .alert.is-danger .alert-close {
+    background-color: var(--danger); }
+    .alert.is-danger .alert-close:hover {
+      background-color: var(--danger-dark); }
+
+.alert.is-secondary {
+  background-color: var(--main-bg-dark);
   color: var(--main-bg-contrast);
   border-color: var(--main-bg-contrast);
   border: 2px solid;
   padding: calc(1rem - 2px) calc(1.25rem - 2px); }
-  .is-secondary.alert .alert-close {
-    background-color: var(--main-bg-color);
+  .alert.is-secondary .alert-close {
+    background-color: var(--main-bg-dark);
     border: 2px solid;
     transform: translate(1px, -2px); }
-    .is-secondary.alert .alert-close .material-icons {
+    .alert.is-secondary .alert-close .material-icons {
       font-size: calc(1.25rem - 2px); }
-    .is-secondary.alert .alert-close:hover {
-      background-color: var(--main-bg-dark); }
+    .alert.is-secondary .alert-close:hover {
+      background-color: var(--main-bg-color); }
 
