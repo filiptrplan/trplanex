@@ -18,6 +18,7 @@ $nav-link-hover: white;
 $main-bg-color: $gray-800;
 $main-bg-dark: lighten($main-bg-color, 2%);
 $main-bg-contrast: $gray-100;
+$box-bg: lighten($gray-800, 5%);
 
 // Colors for specific components -- generally try to keep them on the default values for visual cohesion
 $btn-secondary-hover: $main-bg-dark;

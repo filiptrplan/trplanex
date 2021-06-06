@@ -37,7 +37,9 @@ Used for backgrounds of various elements.
 $main-bg-color: $gray-800;
 // Dark variant of the background color
 $main-bg-dark: lighten($main-bg-color, 2%);
-// Used for contrasting boxes and such
+// Used for contrasting emphasized elements on the background color
 $main-bg-contrast: $gray-100;
+// Color used for backgrounds of "raised" elements
+$box-bg: $gray-600;
 ```
 
