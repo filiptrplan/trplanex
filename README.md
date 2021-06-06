@@ -1,5 +1,7 @@
 # trplanex
-My personal component library.
+My personal component library. You can see the demo page at this link: 
+
+**[Demo link](https://trplanex.trplan.si/)**
 
 ## Components
 This is a list of currently available components for the trplanex library.
