@@ -1,4 +1,4 @@
-import './styles/app.scss';
+import './index.scss';
 
 import './js/alert.js';
 
